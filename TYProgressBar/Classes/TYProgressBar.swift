@@ -141,13 +141,14 @@ public class TYProgressBar: UIView {
         } else {
             stopPulseAnimation()
         }
-        
-        UIView.animate(withDuration: 0.5, animations: {
-            self.progressLbl.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-            
-        }) { (_) in
-            self.progressLbl.transform = .identity
-        }
+
+        // disable label animation cause its bug when updating progress quickly.
+//        UIView.animate(withDuration: 0.5, animations: {
+//            self.progressLbl.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+//
+//        }) { (_) in
+//            self.progressLbl.transform = .identity
+//        }
     }
     
     func startPulseAnimation() {

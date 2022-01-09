@@ -14,11 +14,11 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/yashthaker7/TYProgressBar'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Yash Thaker' => 'yashthaker7@gmail.com' }
-  s.source           = { :git => 'https://github.com/yashthaker7/TYProgressBar.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/szdkkk/TYProgressBar.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/yashthaker7'
 
-  s.ios.deployment_target = '11.0'
-  s.swift_versions = ['4.2', '5.0']
+  s.ios.deployment_target = '15.0'
+  s.swift_versions = ['5.0']
 
   s.source_files = 'TYProgressBar/Classes/**/*'
   
